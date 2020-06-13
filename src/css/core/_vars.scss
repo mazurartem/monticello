@@ -1,8 +1,12 @@
 // Colors
-
+$color-blue: #2b3f57;
+$color-white: #ffffff;
 // Fonts
+$bold-family: "gothambold";
+$book-family: "gothambook";
 
 $max-width: 1600px;
+$container-width: 1170px;
 
 @function calcRem($size) {
   $remSize: $size / 16px;

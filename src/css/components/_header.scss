@@ -1,0 +1,87 @@
+.header {
+  background-image: url(../images/BG1.png);
+  background-image: url(../images/BG2.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  background-color: rgb(107, 107, 202);
+
+  &__container {
+    max-width: $container-width;
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+  &__box {
+    padding-top: 53px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 160px;
+  }
+  &__img-krug {
+    margin-right: 10px;
+  }
+  &__nav-list {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 18px;
+  }
+  &__nav-list-item {
+    &:not(:last-child) {
+      margin-right: 85px;
+    }
+  }
+  &__list-text {
+    font-family: $book-family;
+    @include text($H100, 400, $color-white);
+  }
+
+  &__img {
+    border: 10px solid color black;
+  }
+
+  &__social-list {
+    padding-top: 18px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__social-item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $book-family;
+    margin-bottom: 20px;
+    @include text($H500, 400, $color-white);
+  }
+  &__text {
+    text-align: center;
+    font-family: $book-family;
+    @include text($H300, 400, $color-white);
+    margin-bottom: 150px;
+  }
+  &__scroll {
+    text-align: center;
+  }
+  &__nav-right-fixed {
+    margin-right: 20px;
+    margin-top: 200px;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  &__nav-right-fixed-item {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+}
